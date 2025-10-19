@@ -4,30 +4,30 @@ import { Package, Shield, Truck, CheckCircle, Globe, TrendingUp } from "lucide-r
 export function Home() {
   return (
     <>
-      <section className="relative text-center py-24 px-4 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 rounded-3xl mb-12">
+      <section className="relative text-center py-12 md:py-24 px-4 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 rounded-2xl md:rounded-3xl mb-8 md:mb-12">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div className="relative z-10">
-          <div className="inline-block mb-4 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold">
+          <div className="inline-block mb-4 px-4 py-2 bg-primary/10 text-primary rounded-full text-xs md:text-sm font-semibold">
             ✨ Votre Expert en Douane
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 leading-tight bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent px-2">
             Simplifiez vos importations et exportations
           </h2>
-          <p className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto">
+          <p className="text-base md:text-xl text-foreground/70 mb-6 md:mb-8 max-w-2xl mx-auto px-4">
             Votre partenaire de confiance pour un dédouanement rapide et conforme.
           </p>
-          <div className="flex gap-4 justify-center flex-wrap">
-            <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:shadow-lg transition-all">Obtenir un devis</Button>
-            <Button size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-white">En savoir plus</Button>
+          <div className="flex gap-3 md:gap-4 justify-center flex-wrap px-4">
+            <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:shadow-lg transition-all text-sm md:text-base">Obtenir un devis</Button>
+            <Button size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-white text-sm md:text-base">En savoir plus</Button>
           </div>
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="container mx-auto text-center">
-          <h3 className="text-4xl font-bold mb-4">Nos Services</h3>
-          <p className="text-muted-foreground mb-12 text-lg">Des solutions complètes pour tous vos besoins douaniers</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section className="py-12 md:py-20">
+        <div className="container mx-auto text-center px-4">
+          <h3 className="text-3xl md:text-4xl font-bold mb-3 md:mb-4">Nos Services</h3>
+          <p className="text-muted-foreground mb-8 md:mb-12 text-base md:text-lg">Des solutions complètes pour tous vos besoins douaniers</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             <div className="group p-8 bg-gradient-to-br from-blue-50 to-cyan-50 border-2 border-primary/20 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center group-hover:rotate-12 transition-transform">
                 <Package className="w-8 h-8 text-white" />
@@ -53,10 +53,10 @@ export function Home() {
         </div>
       </section>
 
-      <section className="py-20 text-center bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 rounded-3xl">
-        <h3 className="text-4xl font-bold mb-4">Reconnus pour notre expertise</h3>
-        <p className="text-lg text-muted-foreground mb-12">Agréés en douane, avec plus de 15 ans d'expérience.</p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
+      <section className="py-12 md:py-20 text-center bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 rounded-2xl md:rounded-3xl px-4">
+        <h3 className="text-3xl md:text-4xl font-bold mb-3 md:mb-4">Reconnus pour notre expertise</h3>
+        <p className="text-base md:text-lg text-muted-foreground mb-8 md:mb-12">Agréés en douane, avec plus de 15 ans d'expérience.</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto mb-8 md:mb-12">
           <div className="flex flex-col items-center">
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-3">
               <CheckCircle className="w-8 h-8 text-primary" />

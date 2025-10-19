@@ -30,13 +30,13 @@ const services = [
 
 export function Services() {
   return (
-    <div className="py-20">
-      <div className="container mx-auto text-center">
-        <div className="mb-16">
-          <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">Nos Services</h2>
-          <p className="text-xl text-muted-foreground">Des solutions sur mesure pour vos besoins en douane</p>
+    <div className="py-12 md:py-20">
+      <div className="container mx-auto text-center px-4">
+        <div className="mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">Nos Services</h2>
+          <p className="text-base md:text-xl text-muted-foreground">Des solutions sur mesure pour vos besoins en douane</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {services.map((service) => {
             const Icon = service.icon;
             return (

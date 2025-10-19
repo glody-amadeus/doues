@@ -65,13 +65,13 @@ export function Contact() {
   }
 
   return (
-    <div className="py-20">
-      <div className="container mx-auto max-w-3xl">
-        <div className="text-center mb-12">
-          <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">Demande de Devis</h2>
-          <p className="text-xl text-muted-foreground">Remplissez le formulaire ci-dessous et nous vous répondrons rapidement</p>
+    <div className="py-12 md:py-20">
+      <div className="container mx-auto max-w-3xl px-4">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">Demande de Devis</h2>
+          <p className="text-base md:text-xl text-muted-foreground">Remplissez le formulaire ci-dessous et nous vous répondrons rapidement</p>
         </div>
-        <div className="bg-gradient-to-br from-white to-primary/5 border-2 border-primary/10 p-8 rounded-2xl shadow-xl">
+        <div className="bg-gradient-to-br from-white to-primary/5 border-2 border-primary/10 p-6 md:p-8 rounded-2xl shadow-xl">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
               <FormField

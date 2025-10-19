@@ -44,28 +44,28 @@ export function ServiceDetail() {
   const Icon = service.icon;
 
   return (
-    <div className="py-20">
-      <div className="container mx-auto max-w-4xl">
-        <Link to="/services" className="inline-flex items-center gap-2 text-primary hover:text-secondary transition-colors mb-8">
-          <ArrowLeft className="w-5 h-5" />
-          <span className="font-medium">Retour aux services</span>
+    <div className="py-12 md:py-20">
+      <div className="container mx-auto max-w-4xl px-4">
+        <Link to="/services" className="inline-flex items-center gap-2 text-primary hover:text-secondary transition-colors mb-6 md:mb-8">
+          <ArrowLeft className="w-4 h-4 md:w-5 md:h-5" />
+          <span className="font-medium text-sm md:text-base">Retour aux services</span>
         </Link>
         
-        <div className={`p-12 bg-gradient-to-br ${service.bgGradient} rounded-3xl shadow-2xl border-2 border-primary/10 mb-12`}>
-          <div className="flex flex-col items-center text-center mb-8">
-            <div className={`w-20 h-20 bg-gradient-to-br ${service.gradient} rounded-2xl flex items-center justify-center mb-6 shadow-lg`}>
-              <Icon className="w-10 h-10 text-white" />
+        <div className={`p-6 md:p-12 bg-gradient-to-br ${service.bgGradient} rounded-2xl md:rounded-3xl shadow-2xl border-2 border-primary/10 mb-8 md:mb-12`}>
+          <div className="flex flex-col items-center text-center mb-6 md:mb-8">
+            <div className={`w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br ${service.gradient} rounded-2xl flex items-center justify-center mb-4 md:mb-6 shadow-lg`}>
+              <Icon className="w-8 h-8 md:w-10 md:h-10 text-white" />
             </div>
-            <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">{service.title}</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">{service.title}</h2>
           </div>
-          <p className="text-xl text-foreground/80 leading-relaxed">{service.content}</p>
+          <p className="text-base md:text-xl text-foreground/80 leading-relaxed">{service.content}</p>
         </div>
 
-        <div className="bg-white p-8 rounded-2xl shadow-lg border border-primary/10">
-          <h3 className="text-2xl font-bold mb-4 text-primary">Besoin de ce service ?</h3>
-          <p className="text-foreground/70 mb-6">Contactez-nous dès aujourd'hui pour obtenir un devis personnalisé et découvrir comment nous pouvons vous aider.</p>
+        <div className="bg-white p-6 md:p-8 rounded-2xl shadow-lg border border-primary/10">
+          <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-primary">Besoin de ce service ?</h3>
+          <p className="text-sm md:text-base text-foreground/70 mb-4 md:mb-6">Contactez-nous dès aujourd'hui pour obtenir un devis personnalisé et découvrir comment nous pouvons vous aider.</p>
           <Link to="/contact">
-            <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:shadow-lg">Demander un devis</Button>
+            <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:shadow-lg w-full md:w-auto">Demander un devis</Button>
           </Link>
         </div>
       </div>

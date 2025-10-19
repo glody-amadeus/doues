@@ -2,31 +2,31 @@ import { Target, Heart, Award, Lightbulb, Shield } from 'lucide-react';
 
 export function About() {
   return (
-    <div className="py-20">
-      <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">À Propos de l'Agence Glody</h2>
-          <p className="text-xl text-muted-foreground">Votre partenaire de confiance depuis 2010</p>
+    <div className="py-12 md:py-20">
+      <div className="container mx-auto max-w-4xl px-4">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">À Propos de l'Agence Glody</h2>
+          <p className="text-base md:text-xl text-muted-foreground">Votre partenaire de confiance depuis 2010</p>
         </div>
         
-        <div className="mb-16 p-8 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl border-2 border-primary/10">
+        <div className="mb-12 md:mb-16 p-6 md:p-8 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl border-2 border-primary/10">
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
-              <Target className="w-6 h-6 text-white" />
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+              <Target className="w-5 h-5 md:w-6 md:h-6 text-white" />
             </div>
-            <h3 className="text-3xl font-bold text-primary">Notre Mission</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-primary">Notre Mission</h3>
           </div>
-          <p className="text-lg text-foreground/80 leading-relaxed">Notre mission est de simplifier le commerce international pour nos clients. Nous nous engageons à fournir des services de dédouanement et de logistique qui sont non seulement efficaces et conformes, mais aussi transparents et adaptés aux besoins spécifiques de chaque entreprise. Nous croyons en la construction de partenariats à long terme basés sur la confiance et l'excellence du service.</p>
+          <p className="text-base md:text-lg text-foreground/80 leading-relaxed">Notre mission est de simplifier le commerce international pour nos clients. Nous nous engageons à fournir des services de dédouanement et de logistique qui sont non seulement efficaces et conformes, mais aussi transparents et adaptés aux besoins spécifiques de chaque entreprise. Nous croyons en la construction de partenariats à long terme basés sur la confiance et l'excellence du service.</p>
         </div>
 
-        <div className="mb-16">
-          <div className="flex items-center gap-3 mb-8">
-            <div className="w-12 h-12 bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center">
-              <Heart className="w-6 h-6 text-white" />
+        <div className="mb-12 md:mb-16">
+          <div className="flex items-center gap-3 mb-6 md:mb-8">
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-secondary to-primary rounded-xl flex items-center justify-center">
+              <Heart className="w-5 h-5 md:w-6 md:h-6 text-white" />
             </div>
-            <h3 className="text-3xl font-bold text-secondary">Nos Valeurs</h3>
+            <h3 className="text-2xl md:text-3xl font-bold text-secondary">Nos Valeurs</h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             <div className="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl border border-primary/20">
               <div className="flex items-center gap-2 mb-2">
                 <Shield className="w-5 h-5 text-primary" />
@@ -58,18 +58,18 @@ export function About() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="p-8 bg-white rounded-2xl shadow-lg border border-primary/10">
-            <h3 className="text-2xl font-bold mb-4 text-primary">Notre Histoire</h3>
-            <p className="text-foreground/80 leading-relaxed">Fondée en 2010, l'Agence Glody est née de la volonté de rendre le dédouanement plus accessible aux petites et moyennes entreprises. Avec plus d'une décennie d'expérience, nous sommes devenus un acteur de confiance dans le secteur, reconnu pour notre fiabilité et notre service client exceptionnel.</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <div className="p-6 md:p-8 bg-white rounded-2xl shadow-lg border border-primary/10">
+            <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-primary">Notre Histoire</h3>
+            <p className="text-sm md:text-base text-foreground/80 leading-relaxed">Fondée en 2010, l'Agence Glody est née de la volonté de rendre le dédouanement plus accessible aux petites et moyennes entreprises. Avec plus d'une décennie d'expérience, nous sommes devenus un acteur de confiance dans le secteur, reconnu pour notre fiabilité et notre service client exceptionnel.</p>
           </div>
 
-          <div className="p-8 bg-gradient-to-br from-accent/10 to-orange-50 rounded-2xl shadow-lg border border-accent/20">
-            <div className="flex items-center gap-2 mb-4">
-              <Award className="w-6 h-6 text-accent-foreground" />
-              <h3 className="text-2xl font-bold text-accent-foreground">Certifications</h3>
+          <div className="p-6 md:p-8 bg-gradient-to-br from-accent/10 to-orange-50 rounded-2xl shadow-lg border border-accent/20">
+            <div className="flex items-center gap-2 mb-3 md:mb-4">
+              <Award className="w-5 h-5 md:w-6 md:h-6 text-accent-foreground" />
+              <h3 className="text-xl md:text-2xl font-bold text-accent-foreground">Certifications</h3>
             </div>
-            <p className="text-foreground/80 leading-relaxed">Nous sommes fiers d'être un opérateur économique agréé (OEA), une certification qui atteste de notre fiabilité et de la sécurité de notre chaîne logistique. Tous nos agents sont des déclarants en douane certifiés.</p>
+            <p className="text-sm md:text-base text-foreground/80 leading-relaxed">Nous sommes fiers d'être un opérateur économique agréé (OEA), une certification qui atteste de notre fiabilité et de la sécurité de notre chaîne logistique. Tous nos agents sont des déclarants en douane certifiés.</p>
           </div>
         </div>
       </div>
